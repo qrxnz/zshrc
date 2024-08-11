@@ -22,3 +22,11 @@
 - [firewalld](https://firewalld.org/)
 - [starship](https://starship.rs/)
 - [nix](https://nixos.org/download/)
+
+## Credits
+
+### Inspiration
+
+I was inspired by:
+- [jazzpiazz](https://github.com/jazzpizazz/zsh-aliases)
+- [ptrcnull](https://github.com/ptrcnull/dotfiles)
