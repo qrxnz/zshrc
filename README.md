@@ -14,6 +14,8 @@
 - [rebos](https://gitlab.com/Oglo12/rebos)
 - [nmap](https://nmap.org/)
 - [metasploit](https://www.metasploit.com/)
+- [gobuster](https://github.com/OJ/gobuster)
+- [seclists](https://github.com/danielmiessler/SecLists)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [duf](https://github.com/muesli/duf)
 - [rlwrap](https://github.com/hanslub42/rlwrap)
