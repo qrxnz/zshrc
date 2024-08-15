@@ -106,6 +106,25 @@ venom-win() {
   fi
 }
 
+# gobuster
+dnsscan() {
+  if [ $# -eq 0 ]
+    then
+      echo "[i] Usage: Enter a valid domain (options)"
+    else
+      gobuster dns -d "${@}" -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+  fi
+}
+
+dirscan() {
+  if [ $# -eq 0 ]
+    then
+      echo "[i] Usage: Enter a valid url (options)"
+    else
+      gobuster dir -u "${@}" -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+  fi
+}
+
 # yt-dlp
 yt2wav() {
   if [ $# -eq 0 ]
@@ -188,7 +207,6 @@ yescrypt-crack() {
         echo "At least one of the files does not exist."
     fi
 }
-
 
 op() {
   if [ $# -eq 0 ]
