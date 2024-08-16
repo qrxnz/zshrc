@@ -106,22 +106,22 @@ venom-win() {
   fi
 }
 
-# gobuster
-dnsscan() {
+# discovery
+subdomainscan() {
   if [ $# -eq 0 ]
     then
       echo "[i] Usage: Enter a valid domain (options)"
     else
-      gobuster dns -d "${@}" -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+      wfuzz -c -f sub-domains.txt -Z -w /usr/share/wordlists/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt --sc 200,202,204,301,302,307,403 -u http://"${@}" -H "Host: FUZZ.${@}"
   fi
 }
 
-dirscan() {
+contentscan() {
   if [ $# -eq 0 ]
     then
       echo "[i] Usage: Enter a valid url (options)"
     else
-      gobuster dir -u "${@}" -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+      chameleon -u "${@}" -a --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
   fi
 }
 
@@ -207,6 +207,7 @@ yescrypt-crack() {
         echo "At least one of the files does not exist."
     fi
 }
+
 
 op() {
   if [ $# -eq 0 ]
