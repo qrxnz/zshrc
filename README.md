@@ -11,7 +11,7 @@
 - [kitty](https://sw.kovidgoyal.net/kitty/)
 - [podman](https://podman.io/)
 - [neovim](https://github.com/neovim)
-- [rebos](https://gitlab.com/Oglo12/rebos)
+- [direnv](https://direnv.net/)
 - [nmap](https://nmap.org/)
 - [metasploit](https://www.metasploit.com/)
 - [wfuzz](https://github.com/xmendez/wfuzz)
