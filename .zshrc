@@ -13,6 +13,9 @@
 HISTSIZE=10000
 SAVEHIST="$HISTSIZE"
 
+# direnv
+eval "$(direnv hook zsh)"
+
 #
 # Aliases & Scripts
 #
