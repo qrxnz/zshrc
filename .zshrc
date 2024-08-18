@@ -59,10 +59,6 @@ alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 
-# rebos
-alias rebos-build="rebos gen current build"
-alias rebos-commit="rebos gen commit"
-
 # tty upgrades
 alias uptty="echo '/usr/bin/script -qc /bin/bash /dev/null'| wl-copy"
 
