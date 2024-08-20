@@ -62,6 +62,10 @@ alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 
+# playwright (testing framework)
+alias pwt='bunx playwright test'
+alias pwc='bunx playwright codegen'
+
 # tty upgrades
 alias uptty="echo '/usr/bin/script -qc /bin/bash /dev/null'| wl-copy"
 
