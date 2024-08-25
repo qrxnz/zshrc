@@ -91,7 +91,7 @@ nmap-udp() {
 }
 
 # msfvenom
-venom-linux() {
+venom-elf() {
   if [ $# -eq 0 ]
     then
       echo "[i] Usage: msfvenom ip (options)"
@@ -100,7 +100,7 @@ venom-linux() {
   fi
 }
 
-venom-win() {
+venom-exe() {
   if [ $# -eq 0 ]
     then
       echo "[i] Usage: msfvenom ip (options)"
@@ -180,6 +180,7 @@ alias cls="clear"
 alias csl="clear"
 
 # other
+alias t="tmux"
 alias df="duf"
 alias rr="ranger"
 alias gdb="gdb --quiet"
