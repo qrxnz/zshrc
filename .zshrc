@@ -34,6 +34,7 @@ alias tree="eza -l -a --icons --tree --ignore-glob='.git'"
 
 # bat (modern cat replacement)
 alias cat="bat -pp"
+alias less="bat --paging=always"
 
 # zoxide (modern cd replacement)
 alias cd="z"
