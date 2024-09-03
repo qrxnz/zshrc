@@ -2,12 +2,10 @@
 
 ## Prerequisite
 
-### Dependecies
-
-#### Plugin manager
+### Plugin manager
 - [zplug](https://github.com/zplug/zplug)
 
-#### Packages
+### Dependecies
 - [git](https://git-scm.com/)
 - [eza](https://github.com/eza-community/eza)
 - [bat](https://github.com/sharkdp/bat)
