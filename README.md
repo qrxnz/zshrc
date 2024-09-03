@@ -36,3 +36,6 @@
 I was inspired by:
 - [jazzpiazz](https://github.com/jazzpizazz/zsh-aliases)
 - [ptrcnull](https://github.com/ptrcnull/dotfiles)
+
+### Theme
+I use catppuccin [zsh-syntax-highlighting](https://github.com/catppuccin/zsh-syntax-highlighting.git)
