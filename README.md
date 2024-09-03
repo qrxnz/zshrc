@@ -4,6 +4,10 @@
 
 ### Dependecies
 
+#### Plugin manager
+- [zplug](https://github.com/zplug/zplug)
+
+#### Packages
 - [git](https://git-scm.com/)
 - [eza](https://github.com/eza-community/eza)
 - [bat](https://github.com/sharkdp/bat)
