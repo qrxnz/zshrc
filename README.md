@@ -12,6 +12,7 @@
 - [eza](https://github.com/eza-community/eza)
 - [bat](https://github.com/sharkdp/bat)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
+- [tmux](https://github.com/tmux/tmux)
 - [kitty](https://sw.kovidgoyal.net/kitty/)
 - [podman](https://podman.io/)
 - [neovim](https://github.com/neovim)
