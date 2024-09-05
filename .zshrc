@@ -63,6 +63,7 @@ alias vim="nvim"
 # playwright (testing framework)
 alias pwt='bunx playwright test'
 alias pwc='bunx playwright codegen'
+alias pwr='bunx playwright show-report'
 
 # tty upgrades
 alias uptty="echo '/usr/bin/script -qc /bin/bash /dev/null'| wl-copy"
@@ -260,6 +261,9 @@ export TERM=xterm-256color
 
 # bat theme
 export BAT_THEME="Catppuccin Mocha"
+
+# nix config
+export NIX_CONF_DIR=$HOME/.config/nix
 
 #
 # Zplug
