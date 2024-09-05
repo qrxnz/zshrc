@@ -69,6 +69,25 @@ alias pwr='bunx playwright show-report'
 alias uptty="echo '/usr/bin/script -qc /bin/bash /dev/null'| wl-copy"
 alias fixtty="stty raw -echo; fg; reset | wl-copy"
 
+# hexyl (modern hexdump replacement)
+hexdump() {
+  if [ $# -eq 0 ]
+    then
+      echo "[i] Usage: path to file (options)"
+    else
+      hexyl "${@}"
+  fi
+}
+
+header() {
+  if [ $# -eq 0 ]
+    then
+      echo "[i] Usage: path to file (options)"
+    else
+      hexyl "${@}" | head -n 20
+  fi
+}
+
 # nmap
 nmap-default() {
   if [ $# -eq 0 ]
