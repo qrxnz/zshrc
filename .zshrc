@@ -267,6 +267,7 @@ op() {
 
 # tools
 export PATH="$PATH:$HOME/Tools/bin/"
+export PATH="$PATH:$HOME/.local/bin/"
 
 # cargo
 export PATH="$PATH:$HOME/.cargo/bin/"
