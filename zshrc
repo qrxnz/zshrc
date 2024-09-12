@@ -134,7 +134,7 @@ phprev () {
     then
       echo "[i] Usage: phprev ip port"
     else
-      SHELL=`cat ~/.zsh/revshells/phprev.txt | sed s/x.x.x.x/$1/g | sed s/yyyy/$2/g`
+      SHELL=`cat ~/.config/zsh/revshells/phprev.txt | sed s/x.x.x.x/$1/g | sed s/yyyy/$2/g`
       echo $SHELL > rev.php
   fi
 }
@@ -144,7 +144,7 @@ pwshrev () {
     then
       echo "[i] Usage: pwshrev ip port"
     else
-      SHELL=`cat ~/.zsh/revshells/pwshrev.txt | sed s/x.x.x.x/$1/g | sed s/yyyy/$2/g | iconv -f utf8 -t utf16le | base64 -w 0`
+      SHELL=`cat ~/.config/zsh/revshells/pwshrev.txt | sed s/x.x.x.x/$1/g | sed s/yyyy/$2/g | iconv -f utf8 -t utf16le | base64 -w 0`
       echo "powershell -ec $SHELL" | wl-copy
   fi
 }
