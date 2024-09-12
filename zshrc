@@ -30,6 +30,8 @@ alias ls="eza --icons"
 alias ll="eza -l --icons"
 alias l="eza -l -a --icons"
 
+
+alias tre="eza -l -a --icons --tree --level 2"
 alias tree="eza -l -a --icons --tree --ignore-glob='.git'"
 
 # bat (modern cat replacement)
