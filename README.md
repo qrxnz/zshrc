@@ -1,5 +1,16 @@
 # zhsrc
 
+## Structure
+```
+~/
+├── .zshrc
+└── .config/
+   ├── zsh/
+   │  ├── revshells/
+   │  └── theme/
+   └── zshrc
+```
+
 ## Prerequisite
 
 ### Plugin manager
