@@ -10,6 +10,13 @@
    │  └── theme/
    └── zshrc
 ```
+## Installation
+```sh
+git clone --recursive https://github.com/qrxnz/zshrc &&\
+cd zshrc &&\
+chmod +x setup.sh &&\
+./setup.sh
+```
 
 ## Prerequisite
 
