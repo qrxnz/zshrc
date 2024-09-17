@@ -345,7 +345,7 @@ zplug load #--verbose
 #
 
 # catppuccin theme
-source ~/.config/zshrc/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source ~/.config/zshrc/zsh/theme/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 #
 # Prompt
