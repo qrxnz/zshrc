@@ -10,14 +10,6 @@
    │  └── theme/
    └── zshrc
 ```
-## Installation
-```sh
-git clone --recursive https://github.com/qrxnz/zshrc &&\
-cd zshrc &&\
-chmod +x setup.sh &&\
-./setup.sh
-```
-
 ## Prerequisite
 
 ### Plugin manager
@@ -48,6 +40,14 @@ chmod +x setup.sh &&\
 - [firewalld](https://firewalld.org/)
 - [starship](https://starship.rs/)
 - [nix](https://nixos.org/download/)
+
+## Installation
+```sh
+git clone --recursive https://github.com/qrxnz/zshrc &&\
+cd zshrc &&\
+chmod +x setup.sh &&\
+./setup.sh
+```
 
 ## Credits
 
