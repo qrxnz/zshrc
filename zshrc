@@ -30,7 +30,6 @@ alias ls="eza --icons"
 alias ll="eza -l --icons"
 alias l="eza -l -a --icons"
 
-
 alias tre="eza -l -a --icons --tree --level 2"
 alias tree="eza -l -a --icons --tree --ignore-glob='.git'"
 
@@ -132,7 +131,7 @@ venom-exe() {
 
 # revshells
 phprev () {
-  if [ "$#" -ne 2 ]; 
+  if [ "$#" -ne 2 ];
     then
       echo "[i] Usage: phprev ip port"
     else
@@ -142,7 +141,7 @@ phprev () {
 }
 
 pwshrev () {
-  if [ "$#" -ne 2 ]; 
+  if [ "$#" -ne 2 ];
     then
       echo "[i] Usage: pwshrev ip port"
     else
@@ -231,6 +230,7 @@ alias cds="du -h --max-depth=1 ."
 alias notes="glow --local ~/Sync/Notes"
 alias www="sudo python3 -m http.server 80"
 alias tcp-server="cd /tmp/ && while :; do nc -l -p 4444 | tee  output.log; sleep 1; done"
+alias linpeas="curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -s --output lin.sh"
 
 ips() {
   ip a show scope global | awk '/^[0-9]+:/ { sub(/:/,"",$2); iface=$2 } /^[[:space:]]*inet / { split($2, a, "/"); print "[\033[96m" iface"\033[0m] "a[1] }'
