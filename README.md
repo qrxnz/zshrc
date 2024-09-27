@@ -35,7 +35,6 @@
 - [seclists](https://github.com/danielmiessler/SecLists)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [duf](https://github.com/muesli/duf)
-- [glow](https://github.com/charmbracelet/glow)
 - [john the ripper](https://www.openwall.com/john/)
 - [firewalld](https://firewalld.org/)
 - [starship](https://starship.rs/)
