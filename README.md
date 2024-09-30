@@ -1,6 +1,6 @@
 # zhsrc
 
-## Structure
+## 📁 Structure
 ```
 ~/
 ├── .zshrc
@@ -10,12 +10,12 @@
    │  └── theme/
    └── zshrc
 ```
-## Prerequisite
+## ❗ Prerequisite
 
-### Plugin manager
+### 🔌 Plugin manager
 - [zplug](https://github.com/zplug/zplug)
 
-### Dependecies
+### 📦 Dependecies
 - [git](https://git-scm.com/)
 - [eza](https://github.com/eza-community/eza)
 - [bat](https://github.com/sharkdp/bat)
@@ -40,7 +40,7 @@
 - [starship](https://starship.rs/)
 - [nix](https://nixos.org/download/)
 
-## Installation
+## ⚒️ Installation
 ```sh
 git clone --recursive https://github.com/qrxnz/zshrc &&\
 cd zshrc &&\
@@ -48,14 +48,14 @@ chmod +x setup.sh &&\
 ./setup.sh && source ~/.zshrc
 ```
 
-## Credits
+## 🗒️ Credits
 
-### Inspiration
+### 🎨 Inspiration
 
 I was inspired by:
 - [jazzpiazz](https://github.com/jazzpizazz/zsh-aliases)
 - [ptrcnull](https://github.com/ptrcnull/dotfiles)
 - [omerxx](https://github.com/omerxx/dotfiles)
 
-### Theme
+### 🐱 Theme
 I use catppuccin [zsh-syntax-highlighting](https://github.com/catppuccin/zsh-syntax-highlighting.git)
