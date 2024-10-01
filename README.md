@@ -45,7 +45,8 @@
 git clone --recursive https://github.com/qrxnz/zshrc &&\
 cd zshrc &&\
 chmod +x setup.sh &&\
-./setup.sh && source ~/.zshrc
+./setup.sh &&\
+source ~/.zshrc
 ```
 
 ## 🗒️ Credits
