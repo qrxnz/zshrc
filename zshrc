@@ -24,14 +24,18 @@ alias gsu="git submodule update --remote"
 alias gsa="git submodule add"
 alias gpush="git push -u origin"
 alias gpull="git pull"
+alias grb='git rebase'
+alias grbc='git rebase --continue'
+alias gch='git checkout'
+alias grr='git review -R'
 
 # eza (modern ls replacement)
 alias ls="eza --icons"
 alias ll="eza -l --icons"
 alias l="eza -l -a --icons"
 
-alias tre="eza -l -a --icons --tree --level 2"
 alias tree="eza -l -a --icons --tree --ignore-glob='.git'"
+alias tre="eza -l -a --icons --tree --level 2 --ignore-glob='.git'"
 
 # bat (modern cat replacement)
 alias cat="bat -pp"
