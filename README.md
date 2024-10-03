@@ -1,4 +1,4 @@
-# zhsrc
+# zshrc
 
 ## 📁 Structure
 ```
