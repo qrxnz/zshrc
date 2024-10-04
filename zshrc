@@ -240,14 +240,6 @@ ips() {
   ip a show scope global | awk '/^[0-9]+:/ { sub(/:/,"",$2); iface=$2 } /^[[:space:]]*inet / { split($2, a, "/"); print "[\033[96m" iface"\033[0m] "a[1] }'
 }
 
-pacman-fix() {
-  sudo pacman -Scc
-  sudo mv /etc/pacman.d/gnupg /etc/pacman.d/gnupg.backup
-  sudo pacman-key --init
-  sudo pacman-key --populate
-  sudo pacman -Syu
-}
-
 yescrypt-crack() {
     if [ -f "./passwd" ] && [ -f "./shadow" ]; then
         sudo unshadow passwd shadow > unshadow.txt
