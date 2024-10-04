@@ -31,7 +31,6 @@
 - [wfuzz](https://github.com/xmendez/wfuzz)
 - [catch](https://github.com/jazzpizazz/catch)
 - [hexyl](https://github.com/sharkdp/hexyl)
-- [chameleon](https://github.com/iustin24/chameleon)
 - [seclists](https://github.com/danielmiessler/SecLists)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [duf](https://github.com/muesli/duf)

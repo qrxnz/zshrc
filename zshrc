@@ -174,15 +174,6 @@ subdomainscan() {
   fi
 }
 
-contentscan() {
-  if [ $# -eq 0 ]
-    then
-      echo "[i] Usage: Enter a valid url (options)"
-    else
-      chameleon -u "${@}" -a --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
-  fi
-}
-
 # yt-dlp
 yt2wav() {
   if [ $# -eq 0 ]
