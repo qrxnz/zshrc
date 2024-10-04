@@ -23,7 +23,6 @@
 - [tmux](https://github.com/tmux/tmux)
 - [kitty](https://sw.kovidgoyal.net/kitty/)
 - [wl-copy](https://github.com/bugaevc/wl-clipboard)
-- [podman](https://podman.io/)
 - [neovim](https://github.com/neovim)
 - [direnv](https://direnv.net/)
 - [nmap](https://nmap.org/)
@@ -35,7 +34,6 @@
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [duf](https://github.com/muesli/duf)
 - [john the ripper](https://www.openwall.com/john/)
-- [firewalld](https://firewalld.org/)
 - [starship](https://starship.rs/)
 - [nix](https://nixos.org/download/)
 
