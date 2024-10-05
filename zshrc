@@ -158,6 +158,16 @@ py3rev () {
   fi
 }
 
+shrev () {
+  if [ "$#" -ne 2 ];
+    then
+      echo "[i] Usage: py3rev ip port"
+    else
+      SHELL=`cat ~/.config/zshrc/zsh/revshells/shrev.sh | sed s/x.x.x.x/$1/g | sed s/yyyy/$2/g`
+      echo "$SHELL" | wl-copy
+  fi
+}
+
 # discovery
 subdomainscan() {
   if [ $# -eq 0 ]
