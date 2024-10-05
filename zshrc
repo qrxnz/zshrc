@@ -54,12 +54,6 @@ alias ......="z ../../../../.."
 alias icat="kitty +kitten icat"
 alias connect="kitty +kitten ssh"
 
-# podman/docker
-alias dr="podman run"
-alias dx="podman exec"
-alias dps="podman ps"
-alias dpsa="podman ps -a"
-
 # neovim
 alias v="nvim"
 alias vi="nvim"
@@ -230,7 +224,7 @@ alias t="tmux"
 alias df="duf"
 alias rr="ranger"
 alias gdb="gdb --quiet"
-alias rsc="catch -p 4444"
+alias rsc="rlwrap nc -lnvp 4444"
 alias cds="du -h --max-depth=1 ."
 alias www="sudo python3 -m http.server 80"
 alias tcp-server="cd /tmp/ && while :; do nc -l -p 4444 | tee  output.log; sleep 1; done"
