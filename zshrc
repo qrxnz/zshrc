@@ -13,6 +13,13 @@
 HISTSIZE=10000
 SAVEHIST="$HISTSIZE"
 
+# Clipboard
+if command -v wl-copy &> /dev/null; then
+  CLIPBOARD="wl-copy"
+else
+  CLIPBOARD="xclip -sel clip"
+fi
+
 #
 # Aliases & Scripts
 #
